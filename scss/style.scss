@@ -34,6 +34,7 @@ ul {
 
     &__divider {
         width: 100%;
+        border: 1px solid rgba(255, 255, 255, 0.2);
     }
 
     &__title {
@@ -54,19 +55,20 @@ ul {
         margin-bottom: 79px;
 
         &-input {
-            width: 271px;
+            width: 251px;
             height: 36px;
 
             border: 2px solid rgba(255, 255, 255, 0.4);
             box-sizing: border-box;
             border-radius: 50px;
             background-color: transparent;
-            
+
             outline: none;
 
             color: inherit;
 
             padding-left: 20px;
+            margin-right: 20px;
         }
 
         &-btn {
@@ -95,11 +97,18 @@ ul {
 
     &__list {
         display: flex;
+        margin-top: -16px;
 
         &-item {
             font-family: Paytone One;
             line-height: 25px;
             margin-right: 30px;
+
+            transition: .5s;
+
+            &:hover{
+                color:  #FF1640;
+            }
         }
     }
 }
@@ -111,14 +120,14 @@ ul {
 }
 
 .main-section {
-
     &__inner {
-        margin-left: 224px;
-        margin-right: 224px;
-        margin-top: -65vh;
+        max-width: 994px;
 
-        height: 65vh;
+        margin: 0 auto;
+        margin-top: -70vh;
+        height: 70vh;
         overflow-y: scroll;
+
         &::-webkit-scrollbar {
             display: none;
         }
@@ -136,7 +145,7 @@ ul {
     }
 }
 
-.socials{
+.socials {
     margin-left: 65px;
     margin-right: 65px;
     margin-top: 25px;
@@ -148,20 +157,50 @@ ul {
     align-items: flex-end;
 
 
-   &__item{
-       &--ig{
-           margin-bottom: -6px;
-       }
+    &__item {
+        transition: .5s;
+        &--ig {
+            margin-bottom: -6px;
+        }
 
-       &--tw{
-           margin-bottom: 3px;
-       }
+        &--tw {
+            margin-bottom: 3px;
+        }
 
-       &--yt{
-        margin-bottom: 4px;
+        &--yt {
+            margin-bottom: 4px;
+        }
+
+        &--pt {
+            margin-bottom: -7px;
+        }
+
+        &:hover{
+            transform: translateY(-10px);
+        }
     }
-    &--pt{
-        margin-bottom: -7px;
+}
+
+.makets {
+    margin-top: 70px;
+    margin-bottom: 61px;
+
+    &__row {
+        margin-left: 65px;
+        margin-right: 65px;
+        display: flex;
+
+        &--one {
+            justify-content: center;
+        }
+
+        &--two {
+            justify-content: space-between;
+            margin-top: -50px;
+        }
     }
-   }
+}
+
+.maket--one {
+    z-index: 10;
 }
