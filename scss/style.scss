@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    cursor: default;
 }
 
 
@@ -18,6 +19,7 @@ body {
 a {
     color: inherit;
     text-decoration: none;
+    cursor: pointer;
 }
 
 ul {
@@ -326,7 +328,7 @@ button {
         margin-bottom: 19px;
     }
 
-    &__text{
+    &__text {
         font: 14px;
     }
 }
@@ -339,11 +341,11 @@ button {
     padding-top: 14px;
     padding-bottom: 17px;
 
-    background:rgba(161, 161, 161,1);
+    background: rgba(161, 161, 161, 1);
     position: relative;
     z-index: 10;
 
-    &::before{
+    &::before {
         content: "";
         position: absolute;
         width: 453px;
@@ -352,7 +354,7 @@ button {
         opacity: .4;
 
         right: -5px;
-        bottom:-5px;
+        bottom: -5px;
 
         z-index: 9;
 
@@ -389,6 +391,7 @@ button {
 
     &__info {
         z-index: 10;
+
         &-name {
             font-weight: bold;
             font-size: 14px;
@@ -488,4 +491,173 @@ button {
 .notif__btn-img--on {
     margin-top: 6px;
     margin-left: 5px;
+}
+
+.bottom-section {
+    background: #C4C4C4;
+
+    &__container {
+        max-width: 842px;
+        margin: 0 auto;
+    }
+
+    padding-bottom: 108px;
+}
+
+.brand-row,
+.feedback-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feedback {
+    &-row {
+        align-items: flex-start;
+    }
+
+    font-size: 16px;
+    line-height: 149.8%;
+    color: #000000;
+
+    width: 250px;
+
+    &__pics {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 22px;
+    }
+
+    &__avatar {
+        width: 88.69px;
+        height: 91.36px;
+
+        border-radius: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.feedback__brand {
+    margin-left: 10px;
+}
+
+.feedback__brand--middle {
+    margin-left: -30px;
+}
+
+.footer {
+    background: #2D2828;
+    width: 100%;
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 111px;
+
+    &__button {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        width: 163.98px;
+        height: 160px;
+        top: -80px;
+
+        border-radius: 50%;
+        background: #2D2828;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__btn {
+        width: 117px;
+        height: 117px;
+        border-radius: 50%;
+        background: #FF1640;
+    }
+
+
+    &__inner {
+        margin-left: 59px;
+        margin-right: 59px;
+        display: flex;
+        align-items: flex-start;
+
+        position: relative;
+
+    }
+
+    &__socials {
+        position: absolute;
+        right: 0;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: flex-end;
+    }
+
+    &__links {
+        margin-left: 149px;
+
+        display: flex;
+        align-items: flex-start;
+
+    }
+
+    &__col {
+        margin-right: 84px;
+
+        display: flex;
+        flex-direction: column;
+
+        &-name {
+            font-family: Paytone One;
+            font-size: 18px;
+
+            margin-bottom: 22px;
+        }
+
+        &-link {
+            font-size: 14px;
+            margin-bottom: 11px;
+        }
+    }
+
+    &__brand {
+        font-family: Paytone One;
+        font-size: 45px;
+    }
+
+}
+
+.fsocials {
+    display: flex;
+
+    margin-bottom: 15px;
+}
+
+.fsocial {
+    margin-left: 32px;
+}
+
+.bottom-section {
+    position: relative;
+    overflow-y: hidden;
+}
+
+.footer {
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+
+    transition: .5s;
+}
+
+.footer--up {
+    bottom: 0;
 }
